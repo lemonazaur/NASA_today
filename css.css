@@ -1,0 +1,49 @@
+:root{
+    --dark: #1D010Eff;
+    --brown: #641318ff;
+    --white: #FDD3B7ff;
+    --coral: #F78356ff;
+    --auburn: #ab1823;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the background covers the entire viewport */
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    padding: 18px;
+    background-color: black;
+    border-bottom: solid 9px var(--coral);
+}
+
+.nav-pic{
+    width: 75px;
+    height: 75px;
+}
+
+h1 {
+    color: gold;
+    border-width: 10px medium;
+}
+
+hr {
+    border: 10px solid var(--auburn);
+    margin: 0 0 40px;
+    opacity: 1;
+}
+
+.filler{
+    height: 2000px;
+}
+
+.bg-dark{
+    background-color: var(--dark);
+}
