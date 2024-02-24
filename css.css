@@ -1,11 +1,10 @@
 :root{
-    --dark: #1D010Eff;
+    --dark: #3B0306FF;
     --brown: #641318ff;
     --white: #FDD3B7ff;
     --coral: #F78356ff;
     --auburn: #ab1823;
 }
-
 
 body{
     margin: 0;
@@ -13,37 +12,28 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url("src/MarsBG.jpg");
     height: 100vh; /* Ensure the background covers the entire viewport */
-    background-color: black;
+    background-color: #f78356;
+    font-family: "Futura", sans-serif;
+    transition: all 0.4s ease;
 }
 
 .nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px;
-    background-color: black;
-    border-bottom: solid 9px var(--coral);
+    transition: all 0.4s ease;
 }
 
 .nav-pic{
     width: 75px;
     height: 75px;
-}
-
-h1 {
-    color: gold;
-    border-width: 10px medium;
-}
-
-hr {
-    border: 10px solid var(--auburn);
-    margin: 0 0 40px;
-    opacity: 1;
-}
-
-.filler{
-    height: 2000px;
-}
-
-.bg-dark{
-    background-color: var(--dark);
+    border:solid 4px var(--coral);
+    border-radius: 100%;
+    background-color: black;
+    font-size: large;
+    padding: 6px;
+    transition: all 0.4s ease;
 }

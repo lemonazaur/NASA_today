@@ -1,0 +1,29 @@
+button {
+    border:solid 4px var(--white);;
+    border-radius: 9%;
+    background-color: var(--coral);
+    color: var(--white);
+    font-size: large;
+    height: 60px;
+    width: 100px;
+    transition: all 0.4s ease;
+    margin: 0 3px;
+}
+
+button:hover {
+    background-color: var(--auburn); /* Change background color on hover */
+    border-color: var(--white); /* Change border color on hover */
+    color: var(--white); /* Change text color on hover */
+    transition: all 0.4s ease;
+}
+
+.nav-pic{
+    width: 75px;
+    height: 75px;
+    border:solid 4px var(--white);
+    border-radius: 100%;
+    background-color: var(--coral);
+    font-size: large;
+    padding: 6px;
+    transition: all 0.4s ease;
+}

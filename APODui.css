@@ -1,0 +1,36 @@
+button {
+    border:solid 4px var(--coral);
+    border-radius: 5%;
+    background-color: var(--dark);
+    color: var(--coral);
+    font-size: large;
+    height: 60px;
+    width: 100px;
+    transition: all 0.4s ease;
+    margin: 0 6px;
+}
+
+button:hover {
+    background-color: var(--auburn);
+    border-color: var(--white);
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+
+.nav-pic{
+    width: 150px;
+    height: 150px;
+    border:solid 4px var(--coral);
+    border-radius: 100%;
+    background-color: black;
+    padding: 6px;
+    transition: all 0.4s ease;
+}
+
+.msg{
+    padding: 0 28px;
+    transition: all 1.5s ease;
+    font-family: Futura, sans-serif;
+    color: gold;
+}
+
