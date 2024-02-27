@@ -19,7 +19,7 @@ function apod( url ){
 
 
     //change pic
-    document.querySelector('.nav-pic').src = 'src/MARS.png';
+    document.querySelector('.nav-pic').src = 'src/mars.png';
 
     //change link
     document.getElementById('change').setAttribute('onclick', 'mars()');
