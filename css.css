@@ -37,3 +37,24 @@ body{
     padding: 6px;
     transition: all 0.4s ease;
 }
+
+.content {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%; /* Optional: Set height to ensure vertical centering */
+}
+
+.content-image {
+    /* Optionally, you can set max-width and max-height to control the size of the image */
+    max-width: 100%;
+    max-height: 100%;
+}
+

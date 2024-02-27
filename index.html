@@ -13,7 +13,7 @@
 
                 sessionStorage.setItem('deckLink', `${imageUrl}`);
                 // Set the background image of the body
-                document.body.style.backgroundImage = `url('${imageUrl}')`;
+                document.body.style.backgroundImage = 'url(src/Moon_ISS.png)';
             })
             .catch(error => console.error('Error fetching APOD:', error));
     </script>
@@ -31,27 +31,31 @@
 
 <body>
     <div class="nav">
-        <a href="#" onclick="mars()">
-            <img class="nav-pic" src="src/mars.png" alt="image">
-        </a>
+        <div style="display: flex">
+            <a id="change" href="#" onclick="mars()">
+                <img class="nav-pic" src="src/mars.png" alt="image">
+            </a>
 
-        <div class="msg">
-            <h1 style="margin: 12px 0">
-                GREETINGS CAPITAN !
-            </h1>
-            <p style="margin: 6px 0">THIS IS THE PICTURE OF THE DAY</p>
-            <p style="margin: 6px 0">FROM ONE OF OUR COLONIES</p>
+<!--            <div class="msg">-->
+<!--                <h1 style="margin: 12px 0">-->
+<!--                    GREETINGS CAPITAN !-->
+<!--                </h1>-->
+<!--                <p style="margin: 6px 0">THIS IS THE PICTURE OF THE DAY</p>-->
+<!--                <p style="margin: 6px 0">FROM ONE OF OUR COLONIES</p>-->
+<!--                <p style="margin: 6px 0">TO SEE THE FORECAST, CLICK ON MARS !!!</p>-->
+<!--            </div>-->
         </div>
 
 
-        <div>
+        <div style="display: flex">
             <button type="button" onclick="window.open('https://www.linkedin.com/in/sergey-hakobyan-contactme', '_blank')">Author</button>
             <button type="button" onclick="window.open('https://github.com/lemonazaur/Weather_on_Mars', '_blank')">GitHub</button>
             <button type="button" onclick="window.open('https://api.nasa.gov/#browseAPI', '_blank')">NASA</button>
-            <button type="button" onclick="apod(`${sessionStorage.getItem('deckLink')}`)">APOD</button>
+            <button type="button" onclick="">About</button>
         </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+    </div>
 
 </body>
 </html>

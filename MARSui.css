@@ -1,7 +1,7 @@
 button {
     border:solid 4px var(--white);;
-    border-radius: 9%;
-    background-color: var(--coral);
+    border-radius: 12%;
+    background-color: transparent;
     color: var(--white);
     font-size: large;
     height: 60px;
@@ -11,19 +11,17 @@ button {
 }
 
 button:hover {
-    background-color: var(--auburn); /* Change background color on hover */
-    border-color: var(--white); /* Change border color on hover */
-    color: var(--white); /* Change text color on hover */
+    background-color: var(--auburn);
     transition: all 0.4s ease;
 }
 
 .nav-pic{
-    width: 75px;
-    height: 75px;
-    border:solid 4px var(--white);
+    width: 150px;
+    height: 150px;
+    border:solid 4px var(--brown);
     border-radius: 100%;
     background-color: var(--coral);
     font-size: large;
     padding: 6px;
-    transition: all 0.4s ease;
+    transition: all 1.5s ease;
 }
