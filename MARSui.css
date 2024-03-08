@@ -1,27 +1,10 @@
-button {
-    border:solid 4px var(--white);;
-    border-radius: 12%;
-    background-color: transparent;
-    color: var(--white);
-    font-size: large;
-    height: 60px;
-    width: 100px;
-    transition: all 0.4s ease;
-    margin: 0 3px;
-}
-
 button:hover {
-    background-color: var(--auburn);
+    background-color: var(--brown);
     transition: all 0.4s ease;
 }
 
 .nav-pic{
-    width: 150px;
-    height: 150px;
     border:solid 4px var(--brown);
-    border-radius: 100%;
     background-color: var(--coral);
-    font-size: large;
-    padding: 6px;
-    transition: all 1.5s ease;
+    transition: all 3s ease;
 }

@@ -1,61 +1,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="src/mars.png">
-
-    <script>
-        fetch('https://api.nasa.gov/planetary/apod?api_key=D9bYhAo3CXc89kfradaPKZNvXt3RwbmYvdbC3wgO')
-            .then(response => response.json())
-            .then(data => {
-                // Get the URL of the picture
-                const imageUrl = data.hdurl || data.url;
-
-                sessionStorage.setItem('deckLink', `${imageUrl}`);
-                // Set the background image of the body
-                document.body.style.backgroundImage = 'url(src/Moon_ISS.png)';
-            })
-            .catch(error => console.error('Error fetching APOD:', error));
-    </script>
-
-    <script src="apod.js"></script>
-    <script src="mars.js"></script>
 
     <link href="css.css" type="text/css" rel="stylesheet">
     <link id="UIset" href="APODui.css" type="text/css" rel="stylesheet">
 
-
     <title>Weather on Mars</title>
+    <script>
+        fetch('https://api.nasa.gov/planetary/apod?api_key=D9bYhAo3CXc89kfradaPKZNvXt3RwbmYvdbC3wgO')
+            .then(response => response.json())
+            .then(data => {
+                // Get the URL of the picture or video
+                const imageUrl = data.hdurl || data.url;
 
+                sessionStorage.setItem('deckLink', `${imageUrl}`);
+            })
+            .catch(error => console.error('Error fetching APOD:', error));
+    </script>
 </head>
-
 <body>
     <div class="nav">
-        <div style="display: flex">
-            <a id="change" href="#" onclick="mars()">
-                <img class="nav-pic" src="src/mars.png" alt="image">
-            </a>
-
-<!--            <div class="msg">-->
-<!--                <h1 style="margin: 12px 0">-->
-<!--                    GREETINGS CAPITAN !-->
-<!--                </h1>-->
-<!--                <p style="margin: 6px 0">THIS IS THE PICTURE OF THE DAY</p>-->
-<!--                <p style="margin: 6px 0">FROM ONE OF OUR COLONIES</p>-->
-<!--                <p style="margin: 6px 0">TO SEE THE FORECAST, CLICK ON MARS !!!</p>-->
-<!--            </div>-->
-        </div>
-
+        <a id="change" href="#" onclick="mars()">
+            <img class="nav-pic" src="src/mars.png" alt="image">
+        </a>
 
         <div style="display: flex">
             <button type="button" onclick="window.open('https://www.linkedin.com/in/sergey-hakobyan-contactme', '_blank')">Author</button>
             <button type="button" onclick="window.open('https://github.com/lemonazaur/Weather_on_Mars', '_blank')">GitHub</button>
             <button type="button" onclick="window.open('https://api.nasa.gov/#browseAPI', '_blank')">NASA</button>
-            <button type="button" onclick="">About</button>
+            <button type="button" class="switch" onclick="apodAPI()">APOD</button>
         </div>
     </div>
-    <div class="content">
-    </div>
+
+    <div class="content"></div>
+
+
+    <script src="apod.js"></script>
+    <script src="mars.js"></script>
+    <script src="apodAPI.js"></script>
+    <script src="apodAPIoff.js"></script>
 
 </body>
 </html>

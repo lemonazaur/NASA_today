@@ -1,35 +1,12 @@
-button {
-    border:solid 4px var(--white);
-    border-radius: 5%;
-    background-color: transparent;
-    color: var(--white);
-    font-size: large;
-    height: 60px;
-    width: 100px;
-    transition: all 0.4s ease;
-    margin: 0 6px;
-}
-
 button:hover {
     background-color: rgba(99, 108, 118, 0.64);
     transition: all 0.4s ease;
 }
 
 .nav-pic{
-    width: 150px;
-    height: 150px;
     border:solid 4px var(--white);
-    border-radius: 100%;
     background-color: transparent;
-    padding: 6px;
     transition: all 3s ease;
-}
-
-.msg{
-    padding: 0 28px;
-    transition: all 1.5s ease;
-    font-family: Futura, sans-serif;
-    color: white;
 }
 
 .image-container{

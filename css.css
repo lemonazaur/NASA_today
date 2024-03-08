@@ -1,22 +1,19 @@
 :root{
-    --dark: #3B0306FF;
     --brown: #641318ff;
     --white: #FDD3B7ff;
     --coral: #F78356ff;
-    --auburn: #ab1823;
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url('src/Moon_ISS.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("src/MarsBG.jpg");
-    height: 100vh; /* Ensure the background covers the entire viewport */
-    background-color: #f78356;
-    font-family: "Futura", sans-serif;
+    height: 100vh;
+    background-color: black;
     transition: all 0.4s ease;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -24,37 +21,34 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 18px;
-    transition: all 0.4s ease;
 }
 
 .nav-pic{
-    width: 75px;
-    height: 75px;
-    border:solid 4px var(--coral);
+    width: 10vw;
+    height: 10vw;
+    border:solid 5px var(--coral);
     border-radius: 100%;
     background-color: black;
-    font-size: large;
-    padding: 6px;
-    transition: all 0.4s ease;
+    padding: 0;
+}
+
+button {
+    width: 9vw;
+    height: 4vw;
+    color: var(--white);
+    border:solid 4px var(--white);
+    border-radius: 9%;
+    background-color: transparent;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 6px;
+    min-width: 70px;
+    min-height: 30px;
 }
 
 .content {
-    width: 100vw;
-    height: 530px;
-    display: flex;
-    justify-content: center;
-}
-
-.image-container {
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100%; /* Optional: Set height to ensure vertical centering */
+    height: 100%;
 }
-
-.content-image {
-    /* Optionally, you can set max-width and max-height to control the size of the image */
-    max-width: 100%;
-    max-height: 100%;
-}
-
