@@ -9,7 +9,7 @@ function mars(){
 
     //add msg in the content
     document.querySelector('.content').innerHTML = '' +
-        '<h1>MARS WEATHER API CURRENTLY UNAVAILABlE</h1>' +
+        '<h1>MARS WEATHER API CURRENTLY UNAVAILABLE </h1>' +
         '<h1>(THE API IS NO LONGER ONLINE)</h1>'
 
 
