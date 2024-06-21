@@ -14,7 +14,7 @@ function apod(){
     document.querySelector('.nav-pic').src = 'src/img/mars.png';
 
     //change link
-    document.getElementById('change').setAttribute('onclick', 'mars()');
+    document.getElementById('change').setAttribute('onclick', 'marsAPI()');
 
     //change UI design to APOD
     document.getElementById('UIset').href = 'APODui.css';
