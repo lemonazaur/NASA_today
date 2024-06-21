@@ -17,11 +17,11 @@ function mars(){
 
 
     //set bg MARS
-    document.body.style.backgroundImage = 'url(\'src/MarsBG.jpg\')';
+    document.body.style.backgroundImage = 'url(\'src/img/MarsBG.jpg\')';
     document.body.style.backgroundColor = 'var(--coral)';
 
     //change pic
-    document.querySelector('.nav-pic').src = 'src/ISS.png';
+    document.querySelector('.nav-pic').src = 'src/img/ISS.png';
 
     // Properly set the onclick using a function that captures the current value of sessionStorage
     document.getElementById('change').setAttribute('onclick', 'apod()');

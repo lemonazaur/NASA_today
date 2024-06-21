@@ -1,6 +1,6 @@
 function apod(){
     // Change BG to ISS BG
-    document.body.style.backgroundImage = 'url("src/Moon_ISS.png")';
+    document.body.style.backgroundImage = 'url("src/img/Moon_ISS.png")';
     document.body.style.backgroundColor = 'black';
 
     //Change the name of API activating button
@@ -11,7 +11,7 @@ function apod(){
     document.querySelector('.content').innerHTML = '';
 
     //change pic
-    document.querySelector('.nav-pic').src = 'src/mars.png';
+    document.querySelector('.nav-pic').src = 'src/img/mars.png';
 
     //change link
     document.getElementById('change').setAttribute('onclick', 'mars()');
