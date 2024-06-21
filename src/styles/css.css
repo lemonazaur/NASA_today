@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('src/Moon_ISS.png');
+    background-image: url('Moon_ISS.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
