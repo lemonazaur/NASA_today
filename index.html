@@ -2,12 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="src/mars.png">
+    <link rel="icon" type="image/x-icon" href="src/img/mars.png">
 
-    <link href="css.css" type="text/css" rel="stylesheet">
-    <link id="UIset" href="APODui.css" type="text/css" rel="stylesheet">
+    <!-- STYLES-->
+    <link href="src/styles/main.css" type="text/css" rel="stylesheet">
+    <link id="UIset" href="src/styles/APODui.css" type="text/css" rel="stylesheet">
 
-    <title>Weather on Mars</title>
+    <title>NASA today</title>
     <script>
         fetch('https://api.nasa.gov/planetary/apod?api_key=D9bYhAo3CXc89kfradaPKZNvXt3RwbmYvdbC3wgO')
             .then(response => response.json())
@@ -23,7 +24,7 @@
 <body>
     <div class="nav">
         <a id="change" href="#" onclick="mars()">
-            <img class="nav-pic" src="src/mars.png" alt="image">
+            <img class="nav-pic" src="src/img/mars.png" alt="image">
         </a>
 
         <div style="display: flex">
@@ -36,11 +37,10 @@
 
     <div class="content"></div>
 
-
-    <script src="apod.js"></script>
-    <script src="mars.js"></script>
-    <script src="apodAPI.js"></script>
-    <script src="apodAPIoff.js"></script>
+    <script src="src/js/apod.js"></script>
+    <script src="src/js/mars.js"></script>
+    <script src="src/js/apodAPI.js"></script>
+     <script src="src/js/apodAPIoff.js"></script>
 
 </body>
 </html>
