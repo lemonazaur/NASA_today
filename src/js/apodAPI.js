@@ -5,7 +5,6 @@ function apodAPI() {
     // Calculate width and height based on viewport size
     let width = window.innerWidth;
     let height = 9*width/16;
-    const aspectRatio = 16 / 9; // Standard aspect ratio for 16:9 content
 
     // Check if the URL ends with an image extension
     if (/\.(jpg|jpeg|png|gif)$/i.test(url)) {
